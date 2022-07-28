@@ -3,3 +3,6 @@
 *.xml
 *.pyc
 Encoder_decoder_simple.ipynb
+Unet_model_checkpoints/.index
+Unet_model_checkpoints/.data-00000-of-00001
+Unet_model_checkpoints/checkpoint
