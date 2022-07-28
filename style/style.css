@@ -1,0 +1,38 @@
+body {
+    color: #fff;
+    background-color: #11A27B;
+    /* font-size: 40px; */
+}
+
+#MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+
+.stButton>button{
+    box-shadow: 0px 0px 15px 0px #3dc21b;
+	background-color:#59e67f;
+	border-radius:21px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#105c05;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:7px 58px;
+	text-decoration:none;
+    width: auto;
+    align-self: center;
+}
+
+.css-j5r0tf.e1tzin5v2 {
+    text-align: center;
+}
+.stButton>button:hover {
+	background-color:#41ad07;
+    color:#105c05;
+    border:1px solid #18ab29;
+}
+.stButton>button:active {
+	position:relative;
+	top:1px;
+}
