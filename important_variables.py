@@ -13,7 +13,7 @@ input_shape = (img_width, img_height)
 #     input_shape = (img_width, img_height, 3)
 
 
-theme_image_name = 'bone_fracture.jpg'
+theme_image_name = 'bone_fracture.png'
 
 """### gif from local file"""
 file_ = open(theme_image_name, "rb")
