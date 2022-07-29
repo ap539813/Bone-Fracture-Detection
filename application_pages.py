@@ -10,12 +10,12 @@ def main():
     type_model = st.sidebar.radio("Select Type of Model: ", ('Unet Model', 'Simple Encoder Decoder'))
 
     if type_model == 'Unet Model':
-        st.title(f"Segmentation using {type_model}")
+        st.title(f"Bone fracture localization using {type_model}")
 
         segment_image(model_path_unet)
 
     elif type_model == 'Simple Encoder Decoder':
-        st.title(f"Segmentation using {type_model}")
+        st.title(f"Bone fracture localization using {type_model}")
 
         segment_image(model_path_encoder_decoder)
 

@@ -14,7 +14,7 @@ def segment_image(model_path):
 
     input_col, output_col = st.columns([1, 1])
     input_col.markdown('## Input Image')
-    output_col.markdown('## Segmented Image')
+    output_col.markdown('## Location of Fracture')
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert('RGB')
