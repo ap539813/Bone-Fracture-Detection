@@ -6,14 +6,8 @@ img_width, img_height = 256,256
 
 input_shape = (img_width, img_height)
 
-# dimensions of our images.
-# if K.image_data_format() == 'channels_first':
-#     input_shape = (3, img_width, img_height)
-# else:
-#     input_shape = (img_width, img_height, 3)
 
-
-theme_image_name = 'bone_fracture.png'
+theme_image_name = 'assets/bone_fracture.png'
 
 """### gif from local file"""
 file_ = open(theme_image_name, "rb")
@@ -24,6 +18,6 @@ file_.close()
 
 css_file_path = 'style/style.css'
 
-model_path_unet = 'fracture_segmentation_unet_model.hdf5'
-model_path_encoder_decoder = 'fracture_detection_encoder_decoder_model.hdf5'
+model_path_unet = 'assets/fracture_segmentation_unet_model.hdf5'
+model_path_encoder_decoder = 'assets/fracture_detection_encoder_decoder_model.hdf5'
 
