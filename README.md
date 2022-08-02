@@ -160,13 +160,9 @@ First model I trained was a simple encoder decoder model, the architecture of th
 
 **conv2d\_9 (Conv2D) (None, 16, 16, 256) 590080 [&#39;dropout\_4[0][0]&#39;]**
 
-**conv2d\_transpose (Conv2DTransp (None, 32, 32, 128) 131200 [&#39;conv2d\_9[0][0]&#39;]**
+**conv2d\_transpose (Conv2DTransp (None, 32, 32, 128) 131200 [&#39;conv2d\_9[0][0]&#39;]ose)**
 
-**ose)**
-
-**concatenate (Concatenate) (None, 32, 32, 256) 0 [&#39;conv2d\_transpose[0][0]&#39;,**
-
-**&#39;conv2d\_7[0][0]&#39;]**
+**concatenate (Concatenate) (None, 32, 32, 256) 0 [&#39;conv2d\_transpose[0][0]&#39;,&#39;conv2d\_7[0][0]&#39;]**
 
 **conv2d\_10 (Conv2D) (None, 32, 32, 128) 295040 [&#39;concatenate[0][0]&#39;]**
 
@@ -174,13 +170,9 @@ First model I trained was a simple encoder decoder model, the architecture of th
 
 **conv2d\_11 (Conv2D) (None, 32, 32, 128) 147584 [&#39;dropout\_5[0][0]&#39;]**
 
-**conv2d\_transpose\_1 (Conv2DTran (None, 64, 64, 64) 32832 [&#39;conv2d\_11[0][0]&#39;]**
+**conv2d\_transpose\_1 (Conv2DTran (None, 64, 64, 64) 32832 [&#39;conv2d\_11[0][0]&#39;]spose)**
 
-**spose)**
-
-**concatenate\_1 (Concatenate) (None, 64, 64, 128) 0 [&#39;conv2d\_transpose\_1[0][0]&#39;,**
-
-**&#39;conv2d\_5[0][0]&#39;]**
+**concatenate\_1 (Concatenate) (None, 64, 64, 128) 0 [&#39;conv2d\_transpose\_1[0][0]&#39;,&#39;conv2d\_5[0][0]&#39;]**
 
 **conv2d\_12 (Conv2D) (None, 64, 64, 64) 73792 [&#39;concatenate\_1[0][0]&#39;]**
 
@@ -188,45 +180,25 @@ First model I trained was a simple encoder decoder model, the architecture of th
 
 **conv2d\_13 (Conv2D) (None, 64, 64, 64) 36928 [&#39;dropout\_6[0][0]&#39;]**
 
-**conv2d\_transpose\_2 (Conv2DTran (None, 128, 128, 32 8224 [&#39;conv2d\_13[0][0]&#39;]**
+**conv2d\_transpose\_2 (Conv2DTran (None, 128, 128, 32 8224 [&#39;conv2d\_13[0][0]&#39;]spose) )**
 
-**spose) )**
+**concatenate\_2 (Concatenate) (None, 128, 128, 64 0 [&#39;conv2d\_transpose\_2[0][0]&#39;,) &#39;conv2d\_3[0][0]&#39;]**
 
-**concatenate\_2 (Concatenate) (None, 128, 128, 64 0 [&#39;conv2d\_transpose\_2[0][0]&#39;,**
+**conv2d\_14 (Conv2D) (None, 128, 128, 32 18464 [&#39;concatenate\_2[0][0]&#39;])**
 
-**) &#39;conv2d\_3[0][0]&#39;]**
+**dropout\_7 (Dropout) (None, 128, 128, 32 0 [&#39;conv2d\_14[0][0]&#39;])**
 
-**conv2d\_14 (Conv2D) (None, 128, 128, 32 18464 [&#39;concatenate\_2[0][0]&#39;]**
+**conv2d\_15 (Conv2D) (None, 128, 128, 32 9248 [&#39;dropout\_7[0][0]&#39;])**
 
-**)**
+**conv2d\_transpose\_3 (Conv2DTran (None, 256, 256, 16 2064 [&#39;conv2d\_15[0][0]&#39;]spose) )**
 
-**dropout\_7 (Dropout) (None, 128, 128, 32 0 [&#39;conv2d\_14[0][0]&#39;]**
+**concatenate\_3 (Concatenate) (None, 256, 256, 32 0 [&#39;conv2d\_transpose\_3[0][0]&#39;,) &#39;conv2d\_1[0][0]&#39;]**
 
-**)**
+**conv2d\_16 (Conv2D) (None, 256, 256, 16 4624 [&#39;concatenate\_3[0][0]&#39;])**
 
-**conv2d\_15 (Conv2D) (None, 128, 128, 32 9248 [&#39;dropout\_7[0][0]&#39;]**
+**dropout\_8 (Dropout) (None, 256, 256, 16 0 [&#39;conv2d\_16[0][0]&#39;])**
 
-**)**
-
-**conv2d\_transpose\_3 (Conv2DTran (None, 256, 256, 16 2064 [&#39;conv2d\_15[0][0]&#39;]**
-
-**spose) )**
-
-**concatenate\_3 (Concatenate) (None, 256, 256, 32 0 [&#39;conv2d\_transpose\_3[0][0]&#39;,**
-
-**) &#39;conv2d\_1[0][0]&#39;]**
-
-**conv2d\_16 (Conv2D) (None, 256, 256, 16 4624 [&#39;concatenate\_3[0][0]&#39;]**
-
-**)**
-
-**dropout\_8 (Dropout) (None, 256, 256, 16 0 [&#39;conv2d\_16[0][0]&#39;]**
-
-**)**
-
-**conv2d\_17 (Conv2D) (None, 256, 256, 16 2320 [&#39;dropout\_8[0][0]&#39;]**
-
-**)**
+**conv2d\_17 (Conv2D) (None, 256, 256, 16 2320 [&#39;dropout\_8[0][0]&#39;])**
 
 **conv2d\_18 (Conv2D) (None, 256, 256, 2) 34 [&#39;conv2d\_17[0][0]&#39;]**
 
