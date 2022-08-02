@@ -120,37 +120,21 @@ First model I trained was a simple encoder decoder model, the architecture of th
 
 **==================================================================================================**
 
-**input\_1 (InputLayer) [(None, 256, 256, 3 0 []**
+**input\_1 (InputLayer) [(None, 256, 256, 3 0 [])]**
 
-**)]**
+**conv2d (Conv2D) (None, 256, 256, 16 448 [&#39;input\_1[0][0]&#39;])**
 
-**conv2d (Conv2D) (None, 256, 256, 16 448 [&#39;input\_1[0][0]&#39;]**
+**dropout (Dropout) (None, 256, 256, 16 0 [&#39;conv2d[0][0]&#39;])**
 
-**)**
+**conv2d\_1 (Conv2D) (None, 256, 256, 16 2320 [&#39;dropout[0][0]&#39;])**
 
-**dropout (Dropout) (None, 256, 256, 16 0 [&#39;conv2d[0][0]&#39;]**
+**max\_pooling2d (MaxPooling2D) (None, 128, 128, 16 0 [&#39;conv2d\_1[0][0]&#39;])**
 
-**)**
+**conv2d\_2 (Conv2D) (None, 128, 128, 32 4640 [&#39;max\_pooling2d[0][0]&#39;])**
 
-**conv2d\_1 (Conv2D) (None, 256, 256, 16 2320 [&#39;dropout[0][0]&#39;]**
+**dropout\_1 (Dropout) (None, 128, 128, 32 0 [&#39;conv2d\_2[0][0]&#39;])**
 
-**)**
-
-**max\_pooling2d (MaxPooling2D) (None, 128, 128, 16 0 [&#39;conv2d\_1[0][0]&#39;]**
-
-**)**
-
-**conv2d\_2 (Conv2D) (None, 128, 128, 32 4640 [&#39;max\_pooling2d[0][0]&#39;]**
-
-**)**
-
-**dropout\_1 (Dropout) (None, 128, 128, 32 0 [&#39;conv2d\_2[0][0]&#39;]**
-
-**)**
-
-**conv2d\_3 (Conv2D) (None, 128, 128, 32 9248 [&#39;dropout\_1[0][0]&#39;]**
-
-**)**
+**conv2d\_3 (Conv2D) (None, 128, 128, 32 9248 [&#39;dropout\_1[0][0]&#39;])**
 
 **max\_pooling2d\_1 (MaxPooling2D) (None, 64, 64, 32) 0 [&#39;conv2d\_3[0][0]&#39;]**
 
