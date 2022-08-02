@@ -24,10 +24,11 @@ The standard size we have decided for my model input will be close to 256x256, t
 
 First model I trained was a simple encoder decoder model, the architecture of the model is listed below;
 
-<p align="center">
 
 ## **Model: &quot;Simple Encoder decoder&quot;**
 
+<p align="center">
+  
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
 **Layer (type) Output Shape Param #**
@@ -117,9 +118,11 @@ First model I trained was a simple encoder decoder model, the architecture of th
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
 
-<p align="center">
+
 
 ## **Model: &quot;Unet Model&quot;**
+
+<p align="center">
 
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
