@@ -23,7 +23,7 @@ The standard size we have decided for my model input will be close to 256x256, t
 ## **Model**
 
 First model I trained was a simple encoder decoder model, the architecture of the model is listed below;
-
+<centre>
 ## **Model: &quot;Simple Encoder decoder&quot;**
 
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
@@ -103,7 +103,7 @@ First model I trained was a simple encoder decoder model, the architecture of th
 **conv2d\_29 (Conv2D) (None, 256, 256, 2) 34**
 
 **=================================================================**
-
+</centre>
 **Total params: 1,554,498**
 
 **Trainable params: 1,554,498**
@@ -112,6 +112,8 @@ First model I trained was a simple encoder decoder model, the architecture of th
 
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
+
+<centre>
 ## **Model: &quot;Unet Model&quot;**
 
 **\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
@@ -203,6 +205,7 @@ First model I trained was a simple encoder decoder model, the architecture of th
 **conv2d\_18 (Conv2D) (None, 256, 256, 2) 34 [&#39;conv2d\_17[0][0]&#39;]**
 
 **==================================================================================================**
+</centre>
 
 **Total params: 1,941,122**
 
