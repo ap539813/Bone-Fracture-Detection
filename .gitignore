@@ -8,3 +8,4 @@ Unet_model_checkpoints/.data-00000-of-00001
 Unet_model_checkpoints/checkpoint
 *.gdoc
 .DS_Store
+BoneFractureDetectionDoc.html
